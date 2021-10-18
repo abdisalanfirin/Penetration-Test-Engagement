@@ -45,7 +45,7 @@ This exploit is very severe and Critical as it allows malicious actors to run an
 
     
     Using nmap to scan the system to see any port open
-![using nmap to scan the system](./Images/snap-1.PNG)
+ ![using nmap to scan the system](./Images/snep-1.PNG)
 
 
 2. From the previous step, we see that the Icecast service is running. Let's start by attacking that service. Search for any Icecast exploits:
