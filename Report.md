@@ -64,9 +64,11 @@ Now we’ll use a tool called SearchSploit to locally store a library of exploit
 
 3. Start Metasploit and search for the Icecast module and load it for use.:
  
-    >msfconsole.
-    >search icecast.
-    >use 0.
+    >Msfconsole.
+    
+    >Search icecast.
+    
+    >Use 0.
 
 MSFconsole provides a command line interface to access and work with the Metasploit.
 The Metasploit is a computer security that provides information about security vulnerabilities and aids in penetration testing and IDS signature development. 
