@@ -95,14 +95,14 @@ The Metasploit is a computer security that provides information about security v
 5. Search for the `secretfile.txt` on the target.
 
     meterpreter > search -f *secret*.
+
 OR
+
     meterpreter > shell.
 
 Meterpreter allows me to remotely take over the compromised system, having control of the file system, collect sensitive information such as credentials and secret files.
     
     The search of the secret 
-![The search of secret file](./Images/snap-5.PNG)
-
 ![The search of secret file](./Images/snap-xy.PNG)
 
 6. Search for the `recipe.txt` on the target and download the file:
