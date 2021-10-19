@@ -70,8 +70,8 @@ Now we’ll use a tool called SearchSploit to locally store a library of exploit
 The Metasploit is a computer security that provides information about security vulnerabilities and aids in penetration testing and IDS signature development. 
 
     starting metasploit and searching icecast
- ![search of the recipe](./Images/snap-f.PNG)
-     
+ ![RHOST setting](./Images/snap-x.PNG)
+ 
  ![Metasploits](./Images/snap-3.PNG)
 
  ![Metasploits](./Images/snap-y.PNG)
@@ -87,7 +87,6 @@ The Metasploit is a computer security that provides information about security v
     Setting RHOST to IP adress
 ![RHOST setting](./Images/snap-4.PNG)
 
-![RHOST setting](./Images/snap-x.PNG)
 
 5. Search for the `secretfile.txt` on the target.
 
@@ -110,7 +109,8 @@ OR
     Search of the recipe
     ![search of the recipe](./Images/snap-6.PNG)
     
-    
+    ![search of the recipe](./Images/snap-f.PNG)
+
 7. Use Meterpreter's local exploit suggester to find possible exploits.
     
     meterpreter> run post/multi/recon/local_exploit_suggestor
