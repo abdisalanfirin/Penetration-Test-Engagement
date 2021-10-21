@@ -41,9 +41,13 @@ This exploit is very severe and Critical as it allows malicious actors to run an
 ### Proof of Concept:
 
 1. Perform a service and version scan using Nmap to determine which services are up and running: 
-    nmap -sS -sV -O 192.168.0.20
+    - nmap -sS -sV -O 192.168.0.20
 
-nmap -sS it stands for TCP SYN port scan, where the -sV for is determine the version of the service running on port, and that the -O is the Remote OS detection using TCP/IP.
+    - nmap: allows you to scan your network and discover not only everything connected to it.
+    - -sS: its for TCP SYN port scan.
+    - -sV: it is determine the version of the service running on port. 
+    - -O: is the Remote OS detection using TCP/IP.
+
 After scanning networks for vulnerabilities, we can execute the exploits that we know an organization is vulnerable to.
 
     Using nmap to scan the system to see any port open
