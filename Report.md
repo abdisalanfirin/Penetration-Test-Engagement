@@ -98,11 +98,10 @@ Now we’ll use a tool called SearchSploit to locally store a library of exploit
 
 
 5. Search for the `secretfile.txt` on the target.
+If i run either of this command and i should have similar results.
 
     - meterpreter > search -f *secret*.
 
-OR
-    
     - meterpreter > shell.
 
 - Meterpreter allows me to remotely take over the compromised system, having control of the file system, collect sensitive information such as credentials and secret files.
