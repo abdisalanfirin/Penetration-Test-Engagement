@@ -41,7 +41,8 @@ This exploit is very severe and Critical as it allows malicious actors to run an
 ### Proof of Concept:
 
 1. Perform a service and version scan using Nmap to determine which services are up and running: 
-    - nmap -sS -sV -O 192.168.0.20
+
+- nmap -sS -sV -O 192.168.0.20
 
     - nmap: allows you to scan your network and discover not only everything connected to it.
     - -sS: its for TCP SYN port scan.
