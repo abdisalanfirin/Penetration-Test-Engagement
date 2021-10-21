@@ -90,8 +90,8 @@ Now we’ll use a tool called SearchSploit to locally store a library of exploit
     - set RHOSTS 192.168.0.20.
     - run.
 
-**Rhosts allows me to log in to a UNIX-based system from another computer on the same network.**
-**The rhosts file contains a list of hosts and user names that determines who can log in to a system remotely without a password.**
+-   Rhosts allows me to log in to a UNIX-based system from another computer on the same network.
+-   The rhosts file contains a list of hosts and user names that determines who can log in to a system remotely without a password.
 
     Setting RHOST to IP adress
 ![RHOST setting](./Images/snap-4.PNG)
@@ -105,8 +105,8 @@ OR
     
     - meterpreter > shell.
 
-**Meterpreter allows me to remotely take over the compromised system, having control of the file system, collect sensitive information such as credentials and secret files.**
-**Shell is a software program that provides direct communication between you and the operating system or application, providing an environment to automate IT operations.**
+- Meterpreter allows me to remotely take over the compromised system, having control of the file system, collect sensitive information such as credentials and secret files.
+- Shell is a software program that provides direct communication between you and the operating system or application, providing an environment to automate IT operations.
 
     The search of the secret 
 ![The search of secret file](./Images/snap-xy.PNG)
